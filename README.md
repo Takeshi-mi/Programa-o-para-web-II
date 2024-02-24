@@ -1,20 +1,35 @@
 # Programação para WEB II
-Repositório para armazenar atividades e material da faculdade de Tecnologia em Análise e Desenvolvimento de Sistemas no Instituo Federal de Goiás (IFG). 
-Em web I um estudamos como funciona a web, a criação de páginas e o front-end. HTML,CSS e Javascript não poderiam faltar.
 
-## Conteúdo de web II
-Agora, em WEB II estudaremos o backend, como funcionam as requisições, protocolos, APIs, POST, GET, Cookies, Sessões, JAAS e Filtros, acesso a Banco de Dados com JDBC, frameworks de 
-persistência objeto-relacional e web services. 
+Este repositório é dedicado ao armazenamento de atividades e material da disciplina de Programação para Web II, parte do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no Instituto Federal de Goiás (IFG). 
+
+Durante o curso de Programação para Web I, exploramos conceitos fundamentais da web, como a estruturação de páginas com HTML, estilização com CSS e interatividade com JavaScript.
+
+## Conteúdo de Programação para Web II
+
+A disciplina de Programação para Web II foca no desenvolvimento do backend de aplicações web. Abordamos tópicos como requisições HTTP, protocolos, APIs, métodos POST e GET, gerenciamento de sessões e cookies, segurança com JAAS e Filtros, acesso a bancos de dados com JDBC, além de frameworks de persistência objeto-relacional e web services.
 
 ## Objetivo
-- Capacitar o aluno para o desenvolvimento de páginas web dinâmicas. 
+
+O principal objetivo desta disciplina é capacitar os alunos para o desenvolvimento de páginas web dinâmicas e sistemas web completos, abrangendo tanto o frontend quanto o backend.
+
+## Ferramentas Utilizadas
+
+- **Linguagem de Programação:** [![PHP](https://img.shields.io/badge/PHP-8.3-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+- **Sistema Operacional:** Windows 11
+  ![Windows 11](https://img.shields.io/badge/Windows%2011-0078D7.svg?style=for-the-badge&logo=Windows&logoColor=white)
+- **Servidor Web:**
+  ![Apache](https://img.shields.io/badge/Apache-D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
+- **Servidor Local:**
+  ![Laragon](https://img.shields.io/badge/Laragon-FB7A24.svg?style=for-the-badge&logo=laragon&logoColor=white)
+- **IDE:**
+  ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
-## Ferramentas que estou utilizando
-- Linguagem de programação:  [![php8](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/) v8.3
-- Sistema operacional: Windows 11
-	![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
-- Server:
-	![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
-  Laragon
-- IDE: vsCode
+## Como Utilizar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Takeshi-mi/Programacao-WEB-II.git
+2. Abra o projeto na sua IDE preferida.
+3. Para executar os códigos PHP, certifique-se de ter um ambiente de desenvolvimento configurado corretamente, como o Laragon, XAMPP ou WAMP.
+
