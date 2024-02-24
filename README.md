@@ -15,7 +15,7 @@ O principal objetivo desta disciplina é capacitar os alunos para o desenvolvime
 ## Ferramentas Utilizadas
 
 - **Linguagem de Programação:** [![PHP](https://img.shields.io/badge/PHP-8.3-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-- **Sistema Operacional:** Windows 11
+- **Sistema Operacional:** 
   ![Windows 11](https://img.shields.io/badge/Windows%2011-0078D7.svg?style=for-the-badge&logo=Windows&logoColor=white)
 - **Servidor Web:**
   ![Apache](https://img.shields.io/badge/Apache-D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
