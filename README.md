@@ -10,10 +10,11 @@ persistência objeto-relacional e web services.
 - Capacitar o aluno para o desenvolvimento de páginas web dinâmicas. 
 
 
-## Ferramentas que estou usando
-. A linguagem utilizada será o PHP 8.3 
-<img src="https://raw.githubusercontent.com/github/explore/ccc16358ac4530c6a69b1b80c7223cd2744dea83/topics/php/php.png"  width= "50px" alt="PHP Version Require">
-
-
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-[![php8](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+## Ferramentas que estou utilizando
+- Linguagem de programação:  [![php8](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/) v8.3
+- Sistema operacional: Windows 11
+	![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
+- Server:
+	![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
+  Laragon
+- IDE: vsCode
