@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Avaliações</title>
+</head>
+<body bgcolor="black">
+<font color="white" face="Verdana" size="4">
+
+<h4> INSTITUTO DE CIÊNCIA E TECNOLOGIA DO TAKESHI </h4>
+<p> ALUNO: <font color="grey">____________________ </font> </p>
+<p> TURMA:<font color="grey">____________________ </font> </p>
+<p> DATA: <font color="grey">____________________ </font>
+<p align="left"> NOTA: <font color="grey">____________ </font></p>
+<hr/>
+<h3>Menu</h3>
+<ol>
+<li> <a href="../avaliacoes.html" style="color:blue"> Home </a></li>
+<li> <a href="../secoes/provaHtml.html" style="color:blue"> Prova de HTML </a></li>
+<li> <a href="../secoes/artes.html" style="color:blue"> Prova de artes </a></li>
+<li> <a href="../secoes/geografia.html" style="color:blue"> Prova de geografia </a></li>
+</ol>
+<hr/>
+
+<h1 align="center"> Prova de ciências </h1>
+<center>
+<img src="../images/ciencias.png" width="25%"/>
+</center>
+<center>
+<marquee onmouseover="this.reverse()" onmouseout="this.start()"     
+width="50%" direction="right"  bgcolor="blue">
+<p>💫⭐✨🔭🪐🌎💫⭐✨🔭🪐🌎</p>
+</marquee>
+</center>
+<form id="formCiencias"  method="POST" action="provaHtml.php">
+<ol>
+    <li> <strong> Em qual planeta moram os seres humanos? </strong></li>
+    <ol type="a">
+        <li> <input type="radio" id="q1a" name="questão1" value="Terra" /> <label for="q1a"> Terra 🌎 </label></li>
+        <li> <input type="radio" id="q1b" name="questão1" value="Humanosfera" /> <label for="q1b"> Humanosfera 👥</label></li>
+        <li> <input type="radio" id="q1c" name="questão1" value="Saturno" /> <label for="q1c"> Saturno 🪐</label></li>
+        <li> <input type="radio" id="q1d" name="questão1" value="Marte" /> <label for="q1d"> Marte 👽 </label></li>
+    </ol>
+    <li> <strong> Quanto tempo a <u><i>luz do sol</i></u> demora para chegar até a terra? </strong></li>
+    <ol type="a">
+        <li> <input type="radio" id="q2a" name="questão2" value="Instantâneo" /> <label for="q2a"> É instantâneo </label></li>
+        <li> <input type="radio" id="q2b" name="questão2" value="8 minutos" /> <label for="q2b"> 8 minutos </label></li>
+        <li> <input type="radio" id="q2c" name="questão2" value="8^10 segundos" /> <label for="q2c"> 8<sup>10</sup> segundos</label></li>
+        <li> <input type="radio" id="q2d" name="questão2" value="8 horas" /> <label for="q2d"> 8 horas </label></li>
+    </ol>
+    <li> <strong> Qual o nome do <u><i>satélite natural</u></i> da Terra? </strong></li>
+    <ol type="a">
+        <li> <input type="radio" id="q3a" name="questão3" value="SpaceX" /> <label for="q3a"> SpaceX </label></li>
+        <li> <input type="radio" id="q3b" name="questão3" value="Gagarin6542G" /> <label for="q3b"> Gagarin6542G </label></li>
+        <li> <input type="radio" id="q3c" name="questão3" value="Lua" /> <label for="q3c"> Lua </label></li>
+        <li> <input type="radio" id="q3d" name="questão3" value="StarLink" /> <label for="q3d"> StarLink </label></li>
+    </ol>
+    <li> <strong> Na franquia Star Wars, os canhões de laser das naves fazem barulhos. Isso está cientificamente correto? O som pode se propagar no vácuo?  </strong></li>
+    <ol type="a">
+        <li> <input type="radio" id="q4a" name="questão4" value="Sim" /> <label for="q4a"> Sim, não questione Star Wars. </label></li>
+        <li> <input type="radio" id="q4b" name="questão4" value="Só se tiver bem pertinho" /> <label for="q4b"> Só se tiver bem pertinho que dá pra ouvir</label></li>
+        <li> <input type="radio" id="q4c" name="questão4" value="O som não se propaga no vácuo" /> <label for="q4c"> O som não se propaga no vácuo, portanto não haveria som algum saindo.</label></li>
+        <li> <input type="radio" id="q4d" name="questão4" value="Se tiver treinado seu ouvido" /> <label for="q4d"> Se tiver treinado seu ouvido o suficiente dá certo. <sub>que a força esteja com você</sub></label></li>
+    </ol>
+</ol>
+<button type="submit"    >Enviar</button>
+<input type="reset" value="Limpar Formulário">
+</form>
+
+</font>
+</body>
+</html>

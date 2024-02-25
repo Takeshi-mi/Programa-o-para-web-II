@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -120,7 +120,7 @@ if (isset($_POST['num1'], $_POST['num2'], $_POST['num3'], $_POST['num4'])) {
 
 
     // Mostrar os resultados
-    echo var_dump($arrayNumeros);
+    //echo var_dump($arrayNumeros);
     echo "<h2>&nbsp Resultados:</h2>";
     echo "&nbsp&nbsp a) Soma dos números: $soma <br/>";
     echo "&nbsp&nbsp b) Quantidade de números: $quantidade <br/>";

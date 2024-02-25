@@ -20,6 +20,7 @@
 
         <button type="submit" class="btn btn-success">Calcular IMC</button>
     </form>
+
 </body>
 
 </html>
@@ -62,4 +63,10 @@ if (isset($_POST["altura"],$_POST["peso"])) {
     $resultado = calcularIMC($altura, $peso);
     echo $resultado;
 }
+
+echo '    <div class="container">
+<div class="d-flex justify-content-center" style="height:40vh;">
+    <img src="imc.png" class="img-fluid" alt="imc">
+</div>
+</div>';
 ?>
