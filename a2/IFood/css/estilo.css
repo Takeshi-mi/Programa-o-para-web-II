@@ -1,0 +1,10 @@
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff; /* Cor do texto */
+    background-color: #B62F35; /* Cor de fundo amarelo */
+    border-color: rgb(197, 197, 118); /* Cor da borda */
+}
+
+.bg-danger {
+    background-color: #8D0003 !important;
+  }
