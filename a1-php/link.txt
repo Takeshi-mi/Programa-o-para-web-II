@@ -1,0 +1,8 @@
+Oi,
+vou postar as tarefas nesse repositório. Assim fica mais fácil pra nós dois e ajuda a manter meu github ativo.
+
+Basta baixar em zip
+https://github.com/Takeshi-mi/Programacao-WEB-II
+
+Ou clonar o repositório
+git clone https://github.com/Takeshi-mi/Programacao-WEB-II.zip
