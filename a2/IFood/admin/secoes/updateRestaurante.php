@@ -1,0 +1,1 @@
+<h1 class="bg-success">Update de restaurantes</h1>

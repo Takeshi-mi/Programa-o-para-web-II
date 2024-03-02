@@ -1,0 +1,1 @@
+<h1 class="bg-primary">Cadastro de restaurantes</h1>

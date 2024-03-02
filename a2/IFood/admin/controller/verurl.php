@@ -2,7 +2,7 @@
 class VerUrl{
     function trocar_url ($url){
         if(empty($url)){
-            $url =  "secoes/home.php";
+            $url =  "secoes/dashboard.php";
         }
         elseif($url === "ademiro"){
             $url = "admin/index.php";

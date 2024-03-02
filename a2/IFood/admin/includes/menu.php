@@ -1,5 +1,5 @@
 <nav>
-    <ul class="nav nav-pills justify-content-center">
+    <ul class="nav nav-pills justify-content-center flex-column ">
         <li class="nav-item">
             <a class="nav-link <?php echo ($page == 'dashboard') ? 'active text-white bg-danger' : 'text-secondary'; ?> "href="?secao=dashboard">DASHBOARD</a>
         </li>
@@ -7,13 +7,16 @@
             <a class="nav-link <?php echo ($page == 'cadComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>" href="?secao=cadComida">CADASTRO DE COMIDA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?php echo ($page == 'restaurantesParceiros') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateComida">UPDATE COMIDA</a>
+            <a class="nav-link <?php echo ($page == 'updateComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateComida">UPDATE COMIDA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?php echo ($page == 'contato') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=cadRestaurante">CADASTRAR RESTAURANTE</a>
+            <a class="nav-link <?php echo ($page == 'cadRestaurante') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=cadRestaurante">CADASTRAR RESTAURANTE</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?php echo ($page == 'ademiro') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateRestaurante">UPDATE RESTAURANTE</a>
+            <a class="nav-link <?php echo ($page == 'updateRestaurante') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateRestaurante">UPDATE RESTAURANTE</a>
+        </li>
+        <li class="nav-item mt-5">
+            <a class="nav-link text-secondary" href="../index.php?secao=ademiro">LOGOUT</a>
         </li>
     </ul>
 </nav>

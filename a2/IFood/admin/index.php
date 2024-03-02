@@ -12,12 +12,16 @@ if (isset($_GET['erro']) && $_GET['erro'] == 1) {
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' href='css/estilo.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     
-    
+<!--Botao voltar
+<a href="../index.php" class="m-5 "><i class="fa-regular fa-circle-left fa-3x" style="color: #8D0003;"></i></a>
+-->
     <div class="container mt-5">
+
         <h2 class="text-center">Login</h2>
         <form action="admin/login.php" method="POST">
             <div class="mb-3">
@@ -31,7 +35,9 @@ if (isset($_GET['erro']) && $_GET['erro'] == 1) {
             </div>
 
             <button type="submit" class="btn btn-primary"   >Login</button>
-            <button type="reset" class="btn btn-secondary"   >Limpar</button>
+            <button type="reset" class="btn btn-secondary"   >Limpar</button><br/>
+
+            
         </form>
 
         <footer>

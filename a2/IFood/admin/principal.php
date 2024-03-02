@@ -1,3 +1,6 @@
+<?php $page = isset($_GET['secao']) ? $_GET['secao'] : 'dashboard' ;
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,16 +15,25 @@
 </head>
 <body>
     <?php include("includes/header.php");?> 
-    <?php include("includes/menu.php");?> 
-    <main>
-        <?php include_once("controller/verurl.php");
-        $redirecionar = new VerUrl();
-        $redirecionar-> trocar_Url(@$_GET['secao']);
-        ?>
-
-
-
-
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menu Vertical -->
+            <div class="col-md-2 border-right">
+                <?php include("includes/menu.php");?> 
+            </div>
+            
+            <!-- Conteúdo Principal -->
+            <div class="col-md-10">
+                <main>
+                    <?php
+                    include_once("controller/verurl.php");
+                    $redirecionar = new VerUrl();
+                    $redirecionar-> trocar_Url(@$_GET['secao']);
+                    ?>
+                </main>
+            </div>
+        </div>
+    </div>
     </main>
     <?php include("includes/footer.php");?> 
 

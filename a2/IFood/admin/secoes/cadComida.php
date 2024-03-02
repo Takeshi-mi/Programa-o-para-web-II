@@ -1,1 +1,1 @@
-<h1> Cadastro de comidas </h1>
+<h1 class="bg-secondary"> Cadastro de comidas </h1>
