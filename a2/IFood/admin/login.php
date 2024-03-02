@@ -1,4 +1,6 @@
 <?php
+//Definindo a variável page para conseguir interagir com meu menu do bootstrap
+
 // Verificação se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar se os campos foram preenchidos (is set?)
@@ -16,8 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         } else {
             // Login inválido - exibir uma mensagem de erro e redirecionar para a tela de login
-            echo "<h1 style= 'color:red; text-align:center; margin-top:200px;'>Credenciais inválidas. Tente novamente.</h1>";
-            header("location: index.php");
+            
+            header("location: ../index.php?secao=ademiro&erro=1");
+           
         }
     } else {
         // Campos de usuário ou senha não estão definidos(nunca chega aqui porque botei um required no hmtl)

@@ -1,3 +1,8 @@
+<?php // Verifica se há erro na URL, no caso do login
+if (isset($_GET['erro']) && $_GET['erro'] == 1) {
+    echo '<div class="alert alert-danger" role="alert">Usuário ou senha incorretos!</div>';
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

@@ -1,4 +1,4 @@
-<footer class="footer row fixed-bottom bg-danger text-white">
+<footer id = 'footer' class="footer row fixed-bottom bg-danger text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-4">

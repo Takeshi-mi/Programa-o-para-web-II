@@ -1,26 +1,30 @@
 <nav>
-
-
-    <ul class="nav  nav-pills justify-content-center ">
+    <ul class="nav nav-pills justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" id="menu-home" href="?secao=home">HOME</a>
+            <a class="nav-link <?php echo ($page == 'dashboard') ? 'active text-white bg-danger' : 'text-secondary'; ?> "href="?secao=dashboard">DASHBOARD</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="?secao=cadComida">CADASTRO DE COMIDA</a>
+            <a class="nav-link <?php echo ($page == 'cadComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>" href="?secao=cadComida">CADASTRO DE COMIDA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="?secao=updateComida">UPDATE COMIDA</a>
+            <a class="nav-link <?php echo ($page == 'restaurantesParceiros') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateComida">UPDATE COMIDA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="?secao=cadRestaurante">CADASTRAR RESTAURANTE</a>
+            <a class="nav-link <?php echo ($page == 'contato') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=cadRestaurante">CADASTRAR RESTAURANTE</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="?secao=updateRestaurante">UPDATE RESTAURANTE</a>
+            <a class="nav-link <?php echo ($page == 'ademiro') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateRestaurante">UPDATE RESTAURANTE</a>
         </li>
     </ul>
-    </div>
-
-    <!--Botão responsivo <a> -->
-
-
 </nav>
+<!-- Fiz uma maracutaia aí pra trocar a cor de fundo e a cor do texto com bootstrap quando o item de menu for pressionado.
+
+Esse negócio de bootstrap é cheio de bug, credo kkkkk -->
+
+
+
+    
+
+
+
+
