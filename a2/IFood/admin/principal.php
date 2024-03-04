@@ -2,6 +2,7 @@
 <?php
 session_start();
 
+$qualquer = $_SESSION['usuario'];
 ?>
 <?php $page = isset($_GET['secao']) ? $_GET['secao'] : 'dashboard' ;
 ?>
@@ -22,6 +23,8 @@ session_start();
 <body>
     <?php include("includes/header.php");?> 
 
+
+<h1 class="text-primary text-center"> <?php echo "<h1>Bem vindo, ". $qualquer."!!</h1>";?> </h1>
     <div class="container-fluid">
         <div class="row">
             <!-- Menu Vertical -->

@@ -23,7 +23,7 @@
         $this->qr= @mysqli_query($this->conn,$sql) or die("<ins><center>Erro ao executar a query: $sql </center></ins><br/>". mysqli_error($this->conn));
         return $this->qr;
     }
-    protected function listQr($qr){
+    protected function listQuery($qr){
         $this->data=@mysqli_fetch_assoc($qr);
         return $this->data;
     }
