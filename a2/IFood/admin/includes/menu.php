@@ -15,6 +15,9 @@
         <li class="nav-item">
             <a class="nav-link <?php echo ($page == 'updateRestaurante') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateRestaurante">UPDATE RESTAURANTE</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link <?php echo ($page == 'listarUsuarios') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=listarUsuarios">LISTAR USUÁRIOS</a>
+        </li>
         <li class="nav-item mt-5">
             <a class="nav-link text-secondary" href="../index.php?secao=ademiro">LOGOUT</a>
         </li>

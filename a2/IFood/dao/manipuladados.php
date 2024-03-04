@@ -10,6 +10,7 @@
             $this->table= $t;
         }
         public function getAllDataTable(){
+            $dados = array();
             $this->sql = "SELECT * FROM $this->table";
             $this->qr = self::execSQL($this->sql);
 
@@ -17,8 +18,6 @@
                 array_push($dados,$row);
             }
             return $dados;
-
-
 
         }
         public function validarLogin($login, $password){

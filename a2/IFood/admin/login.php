@@ -10,7 +10,7 @@ $dadoslogin->setTable("tb_usuario");
 
 if($dadoslogin->validarLogin($nome,$senha)!=0){
     //direcionar para tela principal
-    $SESSION["usuario"] = $nome;
+    $_SESSION["usuario"] = $nome;
     header("location: principal.php");
 
 
