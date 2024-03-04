@@ -1,5 +1,4 @@
 <?php
-//Definindo a variável page para conseguir interagir com meu menu do bootstrap
 
 // Verificação se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
