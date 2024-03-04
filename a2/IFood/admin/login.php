@@ -6,6 +6,7 @@ $nome = $_POST['usuario'];
 $senha = $_POST['senha'];
 $dadoslogin = new ManipulaDados();
 $dadoslogin->setTable("tb_usuario");
+//teste
 
 if($dadoslogin->validarLogin($nome,$senha)!=0){
     //direcionar para tela principal
