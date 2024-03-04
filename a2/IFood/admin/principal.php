@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+
 ?>
 <?php $page = isset($_GET['secao']) ? $_GET['secao'] : 'dashboard' ;
 ?>

@@ -1,5 +1,24 @@
 <?php
 session_start();
+include_once("../dao/manipuladados.php");
+
+$nome = $_POST['usuario'];
+$senha = $_POST['senha'];
+$dadoslogin = new ManipulaDados();
+$dadoslogin->setTable("tb_usuario");
+
+if($dadoslogin->validarLogin($nome,$senha)!=0){
+    //direcionar para tela principal
+    header("location: principal.php");
+    $SESSION["usuario"] = $nome;
+
+}else{
+    //direcionar novamente para a tela de login
+    header("location: ../index.php?secao=ademiro&erro=1");
+}
+
+/*
+
 // Verificação se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar se os campos foram preenchidos (is set?)
@@ -10,7 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verificar se o usuário e a senha correspondem (não tenho banco de dados, vou usar essas strings aí.)
         if ($username === 'usuario' && $password === 'senha') {
-            //echo "<h1 style= 'color:green; text-align:center; margin-top:200px;'> Login bem sucedido, bem vindo à sua conta. </h1> <br>";
             //direcionar para tela de login
             $_SESSION['usuario'] = $username;
             //header("location: principal.php");
@@ -28,5 +46,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Campos de usuário ou senha não estão definidos(nunca chega aqui porque botei um required no hmtl)
         echo "Por favor, insira um usuário e senha.";
     }
-}
+} */
 ?>
