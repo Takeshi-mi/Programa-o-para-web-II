@@ -1,3 +1,7 @@
+
+<?php
+session_start();
+?>
 <?php $page = isset($_GET['secao']) ? $_GET['secao'] : 'dashboard' ;
 ?>
 
@@ -9,12 +13,14 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <title>MyFood</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <link rel="icon" href="img/site/logo icon.ico" type="image/png">
     <link rel='stylesheet' type='text/css'  href='css/bootstrap.css'/>
     <link rel='stylesheet' type='text/css'  href='css/estilo.css'/>
 
 </head>
 <body>
     <?php include("includes/header.php");?> 
+
     <div class="container-fluid">
         <div class="row">
             <!-- Menu Vertical -->
