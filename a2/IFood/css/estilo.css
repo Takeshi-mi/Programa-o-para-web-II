@@ -2,25 +2,7 @@
     background-color: #8D0003 !important;
   }
 
-  /* CSS para Links 
-a 
-  color: rgb(224, 7, 7) !important; / Cor p
-  text-decoration: none; / Remove sublinhado padrão 
-}
-
-a:visited {
-  color: rgb(238, 10, 238) !important; / Cor para links visitados /
-}
-
-a:active {
-  color: rgb(166, 23, 255); Cor para link ativo (clicado)
-}
-
-a:hover {
-  color: green; 
-}
-*/
-#footer a{
+  #footer a{
   color:white;
   
 }
