@@ -7,36 +7,29 @@ $lista = $dados->getAllDataTable();
 
 ?>
 <div class="container">
-<h2 class="display-5 mb-5">Restaurantes Filiais </h2>
-<hr/>
-<section>
-    <table id="tabela-restaurantes" class="table table-striped table-hover" width="80%">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Localização</th>
-            </tr>
-        </thead>
+    <hr />
+    <div class="card-columns">
         <?php
         foreach ($lista as $restaurante) {
         ?>
-            <tr>
-                <td>
-                    <?= $restaurante['nome'] ?>
-                </td>
-                <td>
-                    <?= $restaurante['descricao'] ?>
-                </td>
-                <td>
-                    <?= $restaurante['localizacao'] ?>
-                </td>
-            </tr>
+
+            <div class="card">
+                <img class="card-img-top" src='./img/restaurantes/restauranteBSB.jpg' alt="Imagem do restaurante">
+                <div class="card-body">
+                    <h4 class="card-title">  <?= $restaurante['nome'] ?></h5>
+                    <p class="card-text">  <?= $restaurante['descricao'] ?></p>
+                    <p class="card-text"><strong> Cidade:</strong> <?= $restaurante['cidade']  ?> </p>
+                    <p class="card-text"> <strong>Localização: </strong><?= $restaurante['localizacao']  ?></h6>
+                    <p class="card-text"> <strong>Telefone: </strong><?= $restaurante['telefone']  ?></h6>
+               
+                </div> <!--card-body-->
+                <div class="card-footer">
+                    <small class="text-muted">★★★★☆</small>
+                </div> <!--card-footer-->
+            </div> <!--card -->
 
         <?php
         }
         ?>
-    </table>
-</section>
-
+    </div> <!--card-column-->
 </div>
