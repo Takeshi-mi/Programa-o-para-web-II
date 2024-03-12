@@ -17,6 +17,8 @@ $qualquer = $_SESSION['usuario'];
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
     <link rel="icon" href="img/site/logo icon.ico" type="image/png">
     <link rel='stylesheet' type='text/css'  href='css/bootstrap.css'/>
+    <link rel='stylesheet' type='text/css'  href='https://cdn.datatables.net/2.0.2/css/dataTables.bootstrap5.css'/>
+    <link rel='stylesheet' type='text/css'  href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css'/>
     <link rel='stylesheet' type='text/css'  href='css/estilo.css'/>
 
 </head>
@@ -24,7 +26,7 @@ $qualquer = $_SESSION['usuario'];
     <?php include("includes/header.php");?> 
 
 
-<h1 class="text-primary text-center"> <?php echo "<h1>Bem vindo, ". $qualquer."!!</h1>";?> </h1>
+
     <div class="container-fluid">
         <div class="row">
             <!-- Menu Vertical -->
@@ -52,7 +54,13 @@ $qualquer = $_SESSION['usuario'];
     
 
 
-    <script src='js/bootstrap.bundle.js'></script>
+    <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js'></script>
+    <script src='https://cdn.datatables.net/2.0.2/js/dataTables.js'></script>
+    <script src='https://cdn.datatables.net/2.0.2/js/dataTables.bootstrap5.js'></script>
+    
+
+    <script>new DataTable('#tabela-usuarios'); </script>
 </body>
 
 </html>
