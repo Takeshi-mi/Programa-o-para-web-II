@@ -3,9 +3,10 @@ include_once("../dao/manipuladados.php");
 
 $dados = new ManipulaDados();
 $dados->setTable("tb_usuario");
-$lista = $dados->getAllDataTable();
+$lista = $dados->getAllDataTable(); 
 
 ?>
+
 <div class="container">
     <h2 class="display-5 mb-5">Lista de usuários </h2>
     <hr />
