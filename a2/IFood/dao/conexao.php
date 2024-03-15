@@ -4,13 +4,13 @@
  //Jeito com orientação a objetos
  abstract class Conexao{
     protected $host, $user, $pass, $dba, $conn, $sql, $qr, $data, $status, $totalFields, $error;
-
+// protected: Modificador de acesso que permite apenas o acesso a classes do mesmo pacote ou que herdaram da classe mãe.
     public function __construct() {
         $this->host= "localhost";
         $this->user="root";
         $this->pass = "";
         $this->dba= "db_tkfood";
-        self::connect();
+        $this->connect();
 
     }
     public function connect(){

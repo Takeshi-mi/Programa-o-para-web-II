@@ -34,15 +34,12 @@ if (isset($_GET['erro']) && $_GET['erro'] == 1) {
                 <input type="password" class="form-control" id="senha" name="senha" required>
             </div>
 
-            <button type="submit" class="btn btn-primary"   >Login</button>
-            <button type="reset" class="btn btn-secondary"   >Limpar</button><br/>
+            <button type="submit" class="btn btn-primary mt-3 mb-5"   >Login</button>
+            <button type="reset" class="btn btn-secondary mt-3 mb-5"   >Limpar</button><br/>
 
             
         </form>
 
-        <footer>
-            <p class="mt-4 text-warning"><i>Dica: usuário='usuario', senha='senha' </i></p>
-        </footer>
     </div>
 
 
