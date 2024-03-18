@@ -1,7 +1,9 @@
 <?php
 session_start();
-
 $qualquer = $_SESSION['usuario'];
+
+//Colocar os cookies
+include_once("validarcookies.php");
 ?>
 <?php $page = isset($_GET['secao']) ? $_GET['secao'] : 'dashboard';
 ?>

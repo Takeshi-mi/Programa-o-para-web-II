@@ -9,10 +9,14 @@ $dadoslogin->setTable("tb_usuario");
 //teste
 
 if($dadoslogin->validarLogin($nome,$senha)!=0){
+        //Setter no Cookie
+        setcookie("nome_usuario",$nome);
+        setcookie("senha_usuario",$senha);
+
     //direcionar para tela principal
     $_SESSION["usuario"] = $nome;
     header("location: principal.php");
-
+    
 
 }else{
     //direcionar novamente para a tela de login
