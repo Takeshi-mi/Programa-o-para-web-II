@@ -7,14 +7,16 @@ $lista = $dados->getAllDataTable();
 
 ?>
 <div class="container">
+
     <hr />
     <div class="card-columns">
         <?php
         foreach ($lista as $restaurante) {
         ?>
-
+        
             <div class="card">
-                <img class="card-img-top" src='./img/restaurantes/restauranteBSB.jpg' alt="Imagem do restaurante">
+                <img class="card-img-top" src='<?= $restaurante['url'] ?>' alt="Imagem do restaurante">
+   
                 <div class="card-body">
                     <h4 class="card-title">  <?= $restaurante['nome'] ?></h5>
                     <p class="card-text">  <?= $restaurante['descricao'] ?></p>
