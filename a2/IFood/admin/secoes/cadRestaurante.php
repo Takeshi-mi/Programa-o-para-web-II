@@ -1,31 +1,46 @@
-<h1 class="bg-primary">Cadastro de restaurantes</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 m-4">
 
-<form method="post" action="controller/InserirRestaurante.php" enctype="multipart/form-data">
-<?php //criamos uma Classe InserirRestaurante no Controller ?>
+            <h1 class="text-black-50">Cadastro de restaurantes</h1>
+            <hr />
+            <form method="post" action="controller/InserirRestaurante.php" enctype="multipart/form-data">
+                <?php //criamos uma Classe InserirRestaurante no Controller 
+                ?>
 
-<div class="form-group">
-    <label>NOME: </label>
-    <input class="form-control"  width="50%" type="text" name="txtRestaurante" required>
-</div>
-<p>
-    <label>DESCRIÇÃO: </label>
-    <input type="text" name="txtDescricao" required>
-</p>
-<p>
-    <label>LOCALIZAÇÃO: </label>
-    <input type="text" name="txtLocalizacao" required>
-</p>
-<p>
-    <label>CIDADE: </label>
-    <input type="text" name="txtCidade" required>
-</p>
-<p>
-    <label>TELEFONE: </label>
-    <input type="text" name="txtTelefone" required>
-</p>
-<p>
-    <label>IMAGEM: </label>
-    <input type="file" name="arquivo" required>
-</p>
-<button type="submit" name="enviar" value="enviar" >Enviar</button> 
-</form>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">NOME: </label>
+                        <input id="nome" class="form-control" type="text" name="txtRestaurante" required>
+                    </div>
+                </div> <!--row-->
+                <div class="form-group">
+                    <label for="descricao">DESCRIÇÃO: </label>
+                    <textarea id="descricao" class="form-control" rows="3" name="txtDescricao" required></textarea>
+                </div>
+
+                <label for="localizacao">LOCALIZAÇÃO: </label>
+                <input id="localizacao" class="form-control" type="text" name="txtLocalizacao" required>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cidade">CIDADE: </label>
+                        <input id="cidade" class="form-control" type="text" name="txtCidade" required>
+                    </div> <!--form-group-->
+                    <div class="form-group col-md-6">
+                        <label for="telefone">TELEFONE: </label>
+                        <input id="telefone" class="form-control" type="text" name="txtTelefone" required>
+                    </div> <!--form-group-->
+                </div> <!--row-->
+                <div class="form-group">
+                    <label for="img">IMAGEM: </label>
+                    <input id="img" class="form-control" type="file" name="arquivo" required>
+                </div><!--form-group-->
+                <button class="btn btn-success mb-5" type="submit" name="enviar" value="enviar">Enviar</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</div> <!--Container-->

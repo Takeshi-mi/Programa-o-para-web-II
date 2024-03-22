@@ -1,4 +1,5 @@
 <?php
+//ao utilizar cookies, o usuário não pode fazer logout e depois conseguir acessar a página de adm sem logar de novo. 
     include_once("../dao/manipuladados.php");
     $manipula = new manipuladados();
 
