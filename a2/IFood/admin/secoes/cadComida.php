@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-6 m-4">
 
-            <h1 class="text-black-50">Cadastro de </h1>
+            <h1 class="text-black-50">Cadastro de Comidas </h1>
             <hr />
             <form id="formRestaurante" method="post" action="controller/inserirComida.php" enctype="multipart/form-data">
                 <?php //criamos uma Classe InserirRestaurante no Controller 
