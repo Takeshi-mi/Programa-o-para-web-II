@@ -14,10 +14,6 @@ class Comida
     private $ingredientes;
 
 
-    function __construct($nome)
-    {
-        $this->nome = $nome;
-    }
     function __destruct()
     {
         $this->id = null;
@@ -28,8 +24,14 @@ class Comida
     {
         $this->$atributo = $valor;
     }
+    //Se o usuário digitar no preço um número decimal com vírgula não vai dar erro porque a função já vai converter pra ponto.
     function __get($atributo)
     {
-        return $this->$atributo;
+        if ($atributo == 'preco') {
+            $preco = str_replace(',', '.', $this->preco);
+            return $preco;
+        } else {
+            return $this->$atributo;
+        }
     }
 }

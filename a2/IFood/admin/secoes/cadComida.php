@@ -5,13 +5,13 @@
 
             <h1 class="text-black-50">Cadastro de </h1>
             <hr />
-            <form id="formRestaurante" method="post" action="controller/InserirRestaurante.php" enctype="multipart/form-data">
+            <form id="formRestaurante" method="post" action="controller/inserirComida.php" enctype="multipart/form-data">
                 <?php //criamos uma Classe InserirRestaurante no Controller 
                 ?>
 
                 <div class="form-group">
                     <label for="nome">NOME:</label>
-                    <input id="nome" class="form-control" type="text" name="txtRestaurante" required>
+                    <input id="nome" class="form-control" type="text" name="txtNome" required>
                 </div>
 
                 <div class="form-group">
@@ -35,6 +35,11 @@
                         <input id="categoria" class="form-control" type="text" name="txtCategoria" required>
                     </div>
                 </div><!-- .form-row -->
+                
+                <div class="form-group">
+                    <label for="ingredientes">INGREDIENTES:</label>
+                    <textarea id="ingredientes" rows="2" class="form-control" name="txtIngredientes" required></textarea>
+                </div>
 
                 <div class="form-group">
                     <label for="img">IMAGEM:</label>
