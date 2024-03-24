@@ -18,7 +18,6 @@
                     <label for="descricao">DESCRIÇÃO:</label>
                     <textarea id="descricao" class="form-control" rows="2" name="txtDescricao" required></textarea>
                 </div>
-
                 <div class="form-row">
                 <div class="form-group">
                     <label for="preco">PREÇO:</label>

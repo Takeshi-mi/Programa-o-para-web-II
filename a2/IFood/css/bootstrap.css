@@ -4473,6 +4473,12 @@ input[type="button"].btn-block {
 .card-img {
   width: 100%;
   border-radius: calc(0.25rem - 1px);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.card-img:hover {
+
+    transform: scale(1.2);
 }
 
 .card-img-top {
@@ -4480,6 +4486,7 @@ input[type="button"].btn-block {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
+
 
 .card-img-bottom {
   width: 100%;
