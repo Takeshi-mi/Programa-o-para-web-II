@@ -13,7 +13,7 @@ $lista = $dados->getAllDataTable();
 
     <section>
 
-        <form method="POST" action="controller/manterrestaurante.php">
+        
             <table id="tabela-restaurantes" class="table table-striped table-hover" width="100%">
                 <thead>
                     <tr>
@@ -23,7 +23,7 @@ $lista = $dados->getAllDataTable();
                         <th>Localização</th>
                         <th>Cidade</th>
                         <th>Telefone</th>
-                        <th>IMG</th>
+                        <th>Foto</th>
                         <th>Alterar</th>
                         <th>Excluir</th>
                     </tr>
@@ -31,6 +31,7 @@ $lista = $dados->getAllDataTable();
                 <?php
                 foreach ($lista as $restaurante) {
                 ?>
+                <form method="POST" action="controller/manterrestaurante.php">
                     <tr>
                         <td>
                             <?= $restaurante['id'] ?>
@@ -51,7 +52,8 @@ $lista = $dados->getAllDataTable();
                             <?= $restaurante['telefone'] ?>
                         </td>
                         <td>
-                             img
+                        <img class="img-fluid" src='../<?= $restaurante['url'] ?>' alt="Imagem do restaurante">
+                        
                         </td>
                         <input type="hidden" name="txtId" value="<?= $restaurante['id'] ?>" />
                         <input type="hidden" name="txtNome" value="<?= $restaurante['nome'] ?>" />
@@ -60,20 +62,22 @@ $lista = $dados->getAllDataTable();
                         <input type="hidden" name="txtCidade" value="<?= $restaurante['cidade'] ?>" />
                         <input type="hidden" name="txtTelefone" value="<?= $restaurante['telefone'] ?>" />
                         <input type="hidden" name="txtUrl" value="<?= $restaurante['url'] ?>" />
+                        
                         <td>
                             <button type="submit" name="botao" class="btn btn-transparent" value="editar"><i class="fa-regular fa-pen-to-square text-warning"></i></button>
-                            <
+                        
                         </td>
                         <td>
                             <button type="submit" name="botao" class="btn btn-transparent" value="excluir"><i class="fa-regular fa-trash-can text-danger"></i></button>
                         </td>
                     </tr>
+                    </form>
 
                 <?php
                 }
                 ?>
             </table>
-        </form>
+
     </section>
 
 </div>

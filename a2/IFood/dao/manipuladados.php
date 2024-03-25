@@ -75,6 +75,7 @@
         }
     }
     public function update(){
+        //$this->sql = "UPDATE $this->table SET $this->fields WHERE $this->fieldPk = '$this->valuePk'";
         $this->sql = "UPDATE $this->table SET $this->fields WHERE $this->fieldPk = '$this->valuePk'";
         if(self::execSQL($this->sql)){
             $this->status = "Alterado com Sucesso!!";

@@ -29,7 +29,7 @@ move_uploaded_file($_FILES["arquivo"]["tmp_name"], $urlLocalSalvo);
 
 
 $alterar->setTable('tb_restaurantes');
-$alterar->setFields("nome='{$restaurante->getNome()}',descricao='{$restaurante->getDescricao()}',localizacao='{$restaurante->getLocalizacao()}',cidade='{$restaurante->getCidade()}',telefone'{$restaurante->getTelefone()}',url'{$restaurante->getUrl()}'");
+$alterar->setFields("nome='{$restaurante->getNome()}',descricao='{$restaurante->getDescricao()}',localizacao='{$restaurante->getLocalizacao()}',cidade='{$restaurante->getCidade()}',telefone='{$restaurante->getTelefone()}',url='{$restaurante->getUrl()}'");
 $alterar->setFieldPk('id');
 $alterar->setValuePk("{$restaurante->getId()}");
 $alterar->update();
