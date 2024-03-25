@@ -64,7 +64,7 @@
     }
     public function update(){
         $this->sql = "UPDATE $this->table SET $this->fields WHERE $this->fieldPk = '$this->valuePk'";
-        if(self::countData($this->sql)){
+        if(self::execSQL($this->sql)){
             $this->status = "Alterado com Sucesso!!";
         }
         else{
@@ -73,9 +73,9 @@
 
     }
     public function delete(){
-        $this->sql = "DELETE $this->table WHERE $this->fieldPk = '$this->valuePk'";
-        if(self::countData($this->sql)){
-            $this->status = "Alterado com Sucesso!!";
+        $this->sql = "DELETE FROM $this->table WHERE $this->fieldPk = '$this->valuePk'";
+        if(self::execSQL($this->sql)){
+            $this->status = "Excluído com Sucesso!!";
         }
         else{
             $this->status = "Erro ao deletar tabela".$this->table." ".mysqli_error($this->connect());
