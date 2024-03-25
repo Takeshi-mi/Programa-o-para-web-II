@@ -47,6 +47,18 @@
             return $dados;
 
         }
+        public function getAllDataById($id){
+         
+            $this->sql = "SELECT * FROM $this->table WHERE $this->fieldPk='$id'";
+            $this->qr = self::execSQL($this->sql);
+
+            $dados = array();
+            while($row = self::listQuery($this->qr)){
+                array_push($dados,$row);
+            }
+            return $dados;
+
+        }
         public function validarLogin($login, $password){
             $this->sql = "SELECT * FROM tb_usuario WHERE nome = '$login' and senha = '$password'";
             $this->qr = self::execSQL($this->sql);

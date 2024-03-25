@@ -49,6 +49,6 @@ $inserir->insert();
 //echo $inserir->getDados();
 //echo $inserir->getStatus();
 echo '<script> alert("'.$inserir->getStatus().'");</script>';
-header('location: ../principal.php');
+header('location: ../principal.php?secao=cadRestaurante');
 ?>
 
