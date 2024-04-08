@@ -18,6 +18,10 @@ $restaurante->setLocalizacao($_POST['txtLocalizacao']);
 $restaurante->setCidade($_POST['txtCidade']);
 $restaurante->setTelefone($_POST['txtTelefone']);
 
+// Verificando se não está vazio
+print_r($_FILES['arquivo']);
+if(isset ($_FILES['arquivo'])){
+
 // Esse eu salvo no banco
 $nomeArquivo = $_FILES['arquivo']['name'];
 $restaurante->setUrl("img/restaurantes/" . $nomeArquivo);
@@ -26,7 +30,7 @@ $restaurante->setUrl("img/restaurantes/" . $nomeArquivo);
 $nomeArquivoSalvo = converte($_FILES['arquivo']['name']);
 $urlLocalSalvo = "../../img/restaurantes/" . $nomeArquivo;
 move_uploaded_file($_FILES["arquivo"]["tmp_name"], $urlLocalSalvo);
-
+}
 
 $alterar->setTable('tb_restaurantes');
 $alterar->setFields("nome='{$restaurante->getNome()}',descricao='{$restaurante->getDescricao()}',localizacao='{$restaurante->getLocalizacao()}',cidade='{$restaurante->getCidade()}',telefone='{$restaurante->getTelefone()}',url='{$restaurante->getUrl()}'");
@@ -35,6 +39,6 @@ $alterar->setValuePk("{$restaurante->getId()}");
 $alterar->update();
 
 echo '<script> alert("'.$alterar->getStatus().'");</script>';
-header('location: ../principal.php?secao=listarRestaurante');
+//header('location: ../principal.php?secao=listarRestaurantes');
 ?>
 

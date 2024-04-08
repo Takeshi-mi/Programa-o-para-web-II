@@ -12,9 +12,7 @@ $localizacao = $_POST["txtLocalizacao"];
 $cidade = $_POST["txtCidade"];
 $telefone = $_POST['txtTelefone'];
 $url = $_POST['txtUrl'];
-
 $botao = $_POST['botao'];
-
 
 switch ($botao) 
 {
@@ -55,7 +53,7 @@ switch ($botao)
     
                     <div class="form-group">
                         <label for="descricao">DESCRIÇÃO:</label>
-                        <textarea id="descricao" class="form-control" rows="2" value="'.$descricao.'" name="txtDescricao"></textarea>
+                        <textarea id="descricao" class="form-control" rows="2"  name="txtDescricao"> '.$descricao.' </textarea>
                     </div>
     
                     <div class="form-group">
@@ -76,9 +74,17 @@ switch ($botao)
                     </div>
     
                     <div class="form-group">
-                        <label for="img">IMAGEM:</label>
-                        <input id="img" class="form-control" type="file"  value="'.$url.'"name="arquivo">
+                    <div class="container">
+            <table>
+                <tr>
+                    <td> <img class="img-fluid " src="../../'.$url.'" alt="Imagem do restaurante"/> </td>
+                    <td> <label for="img">IMAGEM:</label> 
+                        <input id="img" class="form-control" type="file"  value="'.$url.'"name="arquivo"/>
                     </div>
+                    </td>
+                    </tr>
+            </table>
+            </div>
     
                     <button id="btnEnviar" class="btn btn-success mb-5" type="submit" name="enviar" value="enviar">Enviar</button>
                 </form>
