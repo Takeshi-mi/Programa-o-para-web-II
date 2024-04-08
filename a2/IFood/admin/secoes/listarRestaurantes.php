@@ -13,7 +13,6 @@ $lista = $dados->getAllDataTable();
 
     <section>
 
-        
             <table id="tabela-restaurantes" class="table table-striped table-hover" width="100%">
                 <thead>
                     <tr>
@@ -31,7 +30,7 @@ $lista = $dados->getAllDataTable();
                 <?php
                 foreach ($lista as $restaurante) {
                 ?>
-                <form method="POST" action="controller/manterrestaurante.php">
+                
                     <tr>
                         <td>
                             <?= $restaurante['id'] ?>
@@ -64,14 +63,34 @@ $lista = $dados->getAllDataTable();
                         <input type="hidden" name="txtUrl" value="<?= $restaurante['url'] ?>" />
                         
                         <td>
+                            <form method="post" action="controller/manterrestaurante.php">
                             <button type="submit" name="botao" class="btn btn-transparent" value="editar"><i class="fa-regular fa-pen-to-square text-warning"></i></button>
+                            <input type="hidden" name="txtId" value="<?= $restaurante['id'] ?>" />
+                        <input type="hidden" name="txtNome" value="<?= $restaurante['nome'] ?>" />
+                        <input type="hidden" name="txtDescricao" value="<?= $restaurante['descricao'] ?>" />
+                        <input type="hidden" name="txtLocalizacao" value="<?= $restaurante['localizacao'] ?>" />
+                        <input type="hidden" name="txtCidade" value="<?= $restaurante['cidade'] ?>" />
+                        <input type="hidden" name="txtTelefone" value="<?= $restaurante['telefone'] ?>" />
+                        <input type="hidden" name="txtUrl" value="<?= $restaurante['url'] ?>" />
+                            
+                        </form>
                         
                         </td>
                         <td>
+                            <form method="post" action="controller/manterrestaurante.php">
                             <button type="submit" name="botao" class="btn btn-transparent" value="excluir"><i class="fa-regular fa-trash-can text-danger"></i></button>
+                            <input type="hidden" name="txtId" value="<?= $restaurante['id'] ?>" />
+                        <input type="hidden" name="txtNome" value="<?= $restaurante['nome'] ?>" />
+                        <input type="hidden" name="txtDescricao" value="<?= $restaurante['descricao'] ?>" />
+                        <input type="hidden" name="txtLocalizacao" value="<?= $restaurante['localizacao'] ?>" />
+                        <input type="hidden" name="txtCidade" value="<?= $restaurante['cidade'] ?>" />
+                        <input type="hidden" name="txtTelefone" value="<?= $restaurante['telefone'] ?>" />
+                        <input type="hidden" name="txtUrl" value="<?= $restaurante['url'] ?>" />
+                        
+                            </form>
                         </td>
                     </tr>
-                    </form>
+                   
 
                 <?php
                 }
