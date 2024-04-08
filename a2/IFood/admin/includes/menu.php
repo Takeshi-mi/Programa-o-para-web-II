@@ -21,7 +21,7 @@
         </li>
         <li class="nav-item mt-5">
             <a class="nav-link text-secondary" href="./logout.php">LOGOUT</a>
-        </li>
+        </li> <hr/>
     </ul>
 </nav>
 <!-- Fiz uma maracutaia aí pra trocar a cor de fundo e a cor do texto com bootstrap quando o item de menu for pressionado.

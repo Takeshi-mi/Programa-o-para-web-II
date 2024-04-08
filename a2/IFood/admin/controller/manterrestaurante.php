@@ -74,17 +74,15 @@ switch ($botao)
                     </div>
     
                     <div class="form-group">
-                    <div class="container">
-            <table>
-                <tr>
-                    <td> <img class="img-fluid " src="../../'.$url.'" alt="Imagem do restaurante"/> </td>
-                    <td> <label for="img">IMAGEM:</label> 
+                
+                    <p> Imagem atual: </p>
+                     <img class="img-fluid " width="200px" src="../../'.$url.'" alt="Imagem do restaurante"/> <br/>
+                     <label for="img">IMAGEM:</label> 
                         <input id="img" class="form-control" type="file"  value="'.$url.'"name="arquivo"/>
+                        <input type="hidden" name="txtUrl" value="'.$url.'"/> <!-- Campo oculto para manter a URL -->
                     </div>
-                    </td>
-                    </tr>
-            </table>
-            </div>
+                 
+
     
                     <button id="btnEnviar" class="btn btn-success mb-5" type="submit" name="enviar" value="enviar">Enviar</button>
                 </form>
@@ -97,7 +95,7 @@ switch ($botao)
     ';
 
         $manter->setValuePk($id);   
-        $manter->update();
+        //$manter->update();
         break;
     default:
     echo '<script>  alert("deu ruim "); </script>';
