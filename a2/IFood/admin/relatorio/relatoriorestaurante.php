@@ -35,7 +35,7 @@ $pdf->SetFont("Arial","", 18);
 $pdf->SetY(220);
 $pdf->SetMargins(20,20,20,20);
 
-$texto = utf8_decode("O relatório do restaurante TKFood deste mês");
+$texto = mb_convert_encoding("O relatório do restaurante TKFood deste mês",'ISO-8859-1', 'UTF-8');
 
 $pdf->MultiCell(0,20,$texto,0,"C",false);
 $pdf->Ln(10);
@@ -48,7 +48,7 @@ $pdf->MultiCell(0,20,$nome,0,"C",false);
 $pdf->Ln(20);
 
 $pdf->SetFont("Arial","",20);
-$texto3 = utf8_decode("Nome: ").$nome.utf8_decode("º lugar na categoria ").$descricao.utf8_decode(" de nível ").$localizacao;
+$texto3 = mb_convert_encoding("Nome: ",'ISO-8859-1', 'UTF-8').$nome.mb_convert_encoding("º lugar na categoria ",'ISO-8859-1', 'UTF-8').$descricao.mb_convert_encoding(" de nível ",'ISO-8859-1', 'UTF-8').$localizacao;
 $pdf->MultiCell(0,20,$texto3,0,"C",false);
 $pdf->Ln(20);
 
