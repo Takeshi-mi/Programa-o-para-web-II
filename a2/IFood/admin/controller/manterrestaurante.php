@@ -84,7 +84,8 @@ switch ($botao)
                  
 
     
-                    <button id="btnEnviar" class="btn btn-success mb-5" type="submit" name="enviar" value="enviar">Enviar</button>
+                    <button id="btnEnviar" class="btn btn-success mt-3 mb-5" type="submit" name="enviar" value="enviar">Salvar</button>
+                    <a  class="btn btn-danger mt-3  ms-2 mb-5" href="../principal.php?secao=listarRestaurantes">Descartar alterações</a>
                 </form>
     
             </div> <!-- .col-md-6 .m-4 -->

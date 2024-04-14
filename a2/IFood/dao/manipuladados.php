@@ -57,7 +57,12 @@
                 array_push($dados,$row);
             }
             return $dados;
-
+        }
+        public function countAllDataFromTable($table){
+            $this->sql = "SELECT * FROM $table";
+            $this->qr = self::execSQL($this->sql);
+            $linhas = self::countData($this->qr);
+            return $linhas;
         }
         public function validarLogin($login, $password){
             $this->sql = "SELECT * FROM tb_usuario WHERE nome = '$login' and senha = '$password'";
