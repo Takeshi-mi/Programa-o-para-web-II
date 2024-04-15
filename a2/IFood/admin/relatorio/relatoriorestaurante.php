@@ -39,11 +39,9 @@ foreach ($lista as $restaurante) {
     $pdf->SetMargins(20, 20, 20, 20);
 
     // Texto principal
-    $pdf->MultiCell(0, 20, converte("O relatório do restaurante TKFood deste mês"), 0, "C", false);
-    $pdf->Ln(10);
 
-    // Análise UTF-8 (Ajustado para correta codificação)
-    $pdf->MultiCell(0, 20, converte("Análise UTF-8"), 0, "C", false);
+    $pdf->MultiCell(0, 20, converte("Relatório por restaurante"), 0, "C", false);
+    $pdf->Ln(10);
     $pdf->Ln(20);
 
     $pdf->SetFont("Arial", "B", 20);
@@ -68,8 +66,9 @@ foreach ($lista as $restaurante) {
     $paginaAtual++;
     $pdf->MultiCell(0, 20, converte("Página $paginaAtual de $paginasTotal "), 0, "C", false);
     $pdf->Ln(20);
+
+    
 }
 
 // Saída do PDF para o navegador
 $pdf->Output("I", "relatorio-TKFood.pdf");
-fp
