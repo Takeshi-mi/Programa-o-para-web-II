@@ -20,6 +20,8 @@ if (empty($lista)) {
 }
 $paginaAtual = 0;
 $paginasTotal = $dados->countAllDataFromTable('tb_restaurantes');
+
+$numeroIteracao = 1;
 foreach ($lista as $restaurante) {
     // Adiciona uma nova página para cada restaurante
     $pdf->AddPage();
@@ -33,41 +35,47 @@ foreach ($lista as $restaurante) {
     $nome = $restaurante['nome'];
     $descricao = $restaurante['descricao'];
     $localizacao = $restaurante['localizacao'];
+    $cidade= $restaurante['cidade'];
+    $imagem = $restaurante['url'];
+    $qtdComidas = 5;
+
+    // Título
+    $pdf->SetFont("Arial", "B", 18);
+    $pdf->SetY(190);
+    $pdf->SetTextColor(255, 255, 255);
+    $pdf->MultiCell(0, 20, converte("POR RESTAURANTE"), 0, "C", false);
 
     $pdf->SetFont("Arial", "", 18);
+    $pdf->SetTextColor(0, 0, 0);
     $pdf->SetY(220);
     $pdf->SetMargins(20, 20, 20, 20);
-
+    
     // Texto principal
-
-    $pdf->MultiCell(0, 20, converte("Relatório por restaurante"), 0, "C", false);
-    $pdf->Ln(10);
     $pdf->Ln(20);
-
     $pdf->SetFont("Arial", "B", 20);
-    $pdf->MultiCell(0, 20, converte($nome), 0, "C", false);
+    $pdf->SetLeftMargin(60);
+    $pdf->MultiCell(0, 20, converte($numeroIteracao++.'. '.$nome), 0, "L", false);
     $pdf->Ln(20);
 
-    $pdf->SetFont("Arial", "", 20);
+    $pdf->SetFont("Arial", "", 14);
     // Nome, descrição, localização
-    $pdf->MultiCell(0, 20, converte("Nome: ") . converte($nome), 0, "C", false);
-    $pdf->Ln(10);
+    $pdf->MultiCell(0, 20, converte("Nome: ") . converte($nome),"L", false );
+    $pdf->Multicell(0, 20, converte("Descrição: ") . converte($descricao), 0, "L", false);
+    $pdf->MultiCell(0, 20, converte("Cidade: ") . converte($cidade), 0, "L", false);
+    $pdf->MultiCell(0, 20, converte("Localização: ") . converte($localizacao), 0, "L", false);
+    $pdf->MultiCell(0, 20, converte("Comidas cadastradas: ") . converte($qtdComidas), 0, "L", false);
 
-    $pdf->MultiCell(0, 20, converte("Descrição: ") . converte($descricao), 0, "C", false);
-    $pdf->Ln(10);
-
-    $pdf->MultiCell(0, 20, converte("Localização: ") . converte($localizacao), 0, "C", false);
+    $imagem = $lista[2]['url'];
+    $pdf->Image("../../$imagem", 200, 400, 200, 200);
     $pdf->Ln(300);
 
     $pdf->SetFont("Arial", '', 16);
     $pdf->MultiCell(0, 20, "Formosa GO, 08 de abril de 2024", 0, "C", false);
     $pdf->Ln(20);
-   
+
     $paginaAtual++;
     $pdf->MultiCell(0, 20, converte("Página $paginaAtual de $paginasTotal "), 0, "C", false);
     $pdf->Ln(20);
-
-    
 }
 
 // Saída do PDF para o navegador

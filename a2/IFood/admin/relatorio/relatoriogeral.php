@@ -51,9 +51,9 @@ $pdf->SetFont("Arial", "", 16);
 $pdf->SetLeftMargin(60);    
 // Cabeçalhos da tabela
 $pdf->Cell(280, 30, converte("Nome do Restaurante"), 1, 0, "C");
-$pdf->Cell(200, 30, converte("Quantidade de Comidas"), 1, 1, "C");
-
+$pdf->Cell(200, 30, converte("Quantidade de Comidas"), 1, 1, "C",false,'../../?secao=cardapio');
 $pdf->SetFont("Arial", "", 14);
+
 
 foreach ($lista as $restaurante) {
     // Recuperando dados
