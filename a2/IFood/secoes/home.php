@@ -7,7 +7,7 @@
         </div>
         <!-- Descrição na Coluna Direita -->
         <div class="col-md-6">
-        <h2 class="diplay-5 text-danger">O melhor restaurante oriental do Brasil</h2>
+        <h2 class="diplay-5 text-danger">O melhor restaurante oriental do Brasil E o Bruno acredita</h2>
             
             <p class="m-4">Bem-vindo ao mundo de sabor e sofisticação da franquia TK Food, uma referência em culinária oriental por todo o Brasil! </p>
             

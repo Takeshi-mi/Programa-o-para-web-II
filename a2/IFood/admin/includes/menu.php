@@ -1,7 +1,7 @@
 <nav>
     <ul class="nav nav-pills justify-content-center flex-column ">
         <li class="nav-item">
-            <a class="nav-link <?php echo ($page == 'dashboard') ? 'active text-white bg-danger' : 'text-secondary'; ?> "href="?secao=dashboard">DASHBOARD</a>
+            <a class="nav-link <?php echo ($page == 'dashboard') ? 'active text-white bg-alert' : 'text-secondary'; ?> "href="?secao=dashboard">DASHBOARD</a>
         </li>
         <li class="nav-item">
             <a class="nav-link <?php echo ($page == 'cadComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>" href="?secao=cadComida">CADASTRAR COMIDA</a>

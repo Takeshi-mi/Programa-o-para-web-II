@@ -1,4 +1,4 @@
-<footer id = 'footer' class="footer row bg-danger text-white">
+<footer id = 'footer' class="container-fluid footer row mt-5 bg-danger text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -28,7 +28,7 @@
         </div>
         <div class="row mt-3">
             <div class="col-md-12 text-center">
-                <p>&copy; 2024 TKFood. Todos os direitos reservados.</p>
+                <p>&copy; 2024 TKFood. Site feito como portifólio de <a target="blank" href="https://www.github.com/takeshi-mi">Takeshi Miura</a>.</p>
             </div>
         </div>
     </div>
