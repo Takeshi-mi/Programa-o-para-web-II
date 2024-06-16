@@ -40,6 +40,11 @@
                     <textarea id="ingredientes" rows="2" class="form-control" name="txtIngredientes" required></textarea>
                 </div>
 
+                <div class="form-group col-md-6">
+                        <label for="idRestaurante">ID Restaurante:</label>
+                        <input id="idRestaurante" class="form-control" type="number" name="txtIdRestaurante" required>
+                    </div>
+
                 <div class="form-group">
                     <label for="img">IMAGEM:</label>
                     <input id="img" class="form-control" type="file" name="arquivo" required>

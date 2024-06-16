@@ -1,1 +1,0 @@
-<h1 class="bg-info">Update comida</h1>

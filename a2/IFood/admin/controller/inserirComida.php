@@ -17,6 +17,7 @@ $comida->__set('preco', $_POST['txtPreco']);
 $comida->__set('estoque', $_POST['txtEstoque']);
 $comida->__set('categoria', $_POST['txtCategoria']);
 $comida->__set('ingredientes', $_POST['txtIngredientes']);
+$comida->__set('idRestaurante', $_POST['txtIdRestaurante']);
 
 // Esse eu salvo no banco
 $nomeArquivo = $_FILES['arquivo']['name'];
@@ -30,10 +31,10 @@ move_uploaded_file($_FILES["arquivo"]["tmp_name"], $urlLocalSalvo);
 
 
 $manipulador->setTable('tb_comidas');
-$manipulador->setFields('nome,descricao,preco,estoque,categoria,ingredientes,url');
+$manipulador->setFields('nome,descricao,preco,estoque,categoria,ingredientes,idRestaurante,url');
 
 
-$manipulador->setDados("'{$comida->__get('nome')}','{$comida->__get('descricao')}','{$comida->__get('preco')}','{$comida->__get('estoque')}','{$comida->__get('categoria')}','{$comida->__get('ingredientes')}','{$comida->__get('url')}'");
+$manipulador->setDados("'{$comida->__get('nome')}','{$comida->__get('descricao')}','{$comida->__get('preco')}','{$comida->__get('estoque')}','{$comida->__get('categoria')}','{$comida->__get('ingredientes')}','{$comida->__get('idRestaurante')}','{$comida->__get('url')}'");
 $manipulador->insert();
 
 echo '<script> alert("'.$manipulador->getStatus().'");</script>';

@@ -12,6 +12,7 @@ class Comida
     private $estoque;
     private $categoria;
     private $ingredientes;
+    private $idRestaurante;
 
 
     function __destruct()
