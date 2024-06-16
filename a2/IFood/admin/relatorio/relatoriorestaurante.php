@@ -65,7 +65,8 @@ foreach ($lista as $restaurante) {
     $pdf->MultiCell(0, 20, converte("Localização: ") . converte($localizacao), 0, "L", false);
     $pdf->MultiCell(0, 20, converte("Comidas cadastradas: ") . converte($qtdComidas), 0, "L", false);
 
-    $imagem = $lista[2]['url'];
+    //imagem
+    // se der bug é porque o fpdf não suporta o formato webp
     $pdf->Image("../../$imagem", 200, 400, 200, 200);
     $pdf->Ln(300);
 
