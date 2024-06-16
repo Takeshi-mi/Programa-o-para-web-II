@@ -15,7 +15,7 @@ include_once("validarcookies.php");
 
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <title>MyFood</title>
+    <title>TKFood</title>
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel="icon" href="img/site/logo icon.ico" type="image/png">
     <link rel='stylesheet' type='text/css' href='css/bootstrap.css' />
