@@ -16,6 +16,6 @@ $qualquer = $_SESSION['usuario'];
     </div>
     </div>
     <div class="row">
-        <img src=".\img\site\dashboard.webp" alt='dashboard' class='w-full h-48 object-cover' />
+        <img src="..\img\site\dashboard.jpeg" alt='dashboard' class='' />
     </div>
 </div>

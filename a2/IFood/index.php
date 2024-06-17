@@ -36,5 +36,4 @@ $page = isset($_GET['secao']) ? $_GET['secao'] : 'home';
 
     <script src='js/bootstrap.bundle.js'></script>
 </body>
-
 </html>
