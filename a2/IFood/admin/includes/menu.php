@@ -7,7 +7,7 @@
             <a class="nav-link <?php echo ($page == 'cadComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>" href="?secao=cadComida">CADASTRAR COMIDA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?php echo ($page == 'updateComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=updateComida">GERENCIAR COMIDAS</a>
+            <a class="nav-link <?php echo ($page == 'listarComida') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=listarComida">GERENCIAR COMIDAS</a>
         </li>
         <li class="nav-item">
             <a class="nav-link <?php echo ($page == 'cadRestaurante') ? 'active text-white bg-danger' : 'text-secondary'; ?>"href="?secao=cadRestaurante">CADASTRAR RESTAURANTE</a>
